@@ -14,7 +14,7 @@ class Doctor
         @@all
     end
 
-    def new_appointment(patient, date)
+    def new_appointment(date, patient)
         Appointment.new(date, patient, self)
     end
 
@@ -30,7 +30,7 @@ class Doctor
         appointments_object = appointments
         appointments_object.each do |appointment|
             #SOMEONE EXPLAIN THIS
-            return_array.push(appointment.date)
+            return_array.push(appointment.patient)
         end
         return_array
     end
