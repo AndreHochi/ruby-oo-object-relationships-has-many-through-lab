@@ -29,7 +29,6 @@ class Doctor
         return_array = []
         appointments_object = appointments
         appointments_object.each do |appointment|
-            #SOMEONE EXPLAIN THIS
             return_array.push(appointment.patient)
         end
         return_array
